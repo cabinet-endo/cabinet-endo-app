@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabinet Dentaire - Administration</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Administration</h1>
+        <nav>
+            <a href="/">Accueil</a>
+        </nav>
+    </header>
+    <main>
+        <section id="manage-commands">
+            <h2>Gestion des commandes</h2>
+            <form id="add-command-form">
+                <input type="text" id="command-name" placeholder="Nom de la commande" required>
+                <input type="text" id="command-description" placeholder="Description" required>
+                <button type="submit">Ajouter une commande</button>
+            </form>
+            <ul id="command-list"></ul>
+        </section>
+        <section id="task-history">
+            <h2>Historique des tâches</h2>
+            <ul id="task-history-list"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Cabinet Dentaire. Tous droits réservés.</p>
+    </footer>
+    <script src="/js/admin.js"></script>
+</body>
+</html>

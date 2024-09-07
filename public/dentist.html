@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabinet Dentaire - Interface Dentiste</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Interface Dentiste</h1>
+        <nav>
+            <a href="/">Accueil</a>
+        </nav>
+    </header>
+    <main>
+        <section id="commands">
+            <h2>Commandes rapides</h2>
+            <div id="command-buttons"></div>
+        </section>
+        <section id="todo-list">
+            <h2>Liste de tâches</h2>
+            <form id="add-task-form">
+                <input type="text" id="new-task" placeholder="Nouvelle tâche" required>
+                <button type="submit">Ajouter</button>
+            </form>
+            <ul id="tasks"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Cabinet Dentaire. Tous droits réservés.</p>
+    </footer>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/dentist.js"></script>
+</body>
+</html>
